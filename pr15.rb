@@ -68,7 +68,7 @@ end
 # also note my function returns an array, so I call .last to access the result
 p euler(ARGV[0].to_i).last
 
-# GOLF TIME
+#################################### GOLF TIME #########################################
 # here is an entertaining minimalist version to show off Ruby's coolness
 # note that Dan would take away your keyboard if you tried submitting this as project code
 def euler_golf(size)
