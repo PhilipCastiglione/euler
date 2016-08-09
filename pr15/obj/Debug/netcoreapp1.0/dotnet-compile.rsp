@@ -87,4 +87,5 @@
 --reference:/Users/philipcastiglione/.nuget/packages/System.Threading.Timer/4.0.1/ref/netstandard1.2/System.Threading.Timer.dll
 --reference:/Users/philipcastiglione/.nuget/packages/System.Xml.ReaderWriter/4.0.11/ref/netstandard1.3/System.Xml.ReaderWriter.dll
 --reference:/Users/philipcastiglione/.nuget/packages/System.Xml.XDocument/4.0.11/ref/netstandard1.3/System.Xml.XDocument.dll
+/Users/philipcastiglione/dev/stuff/multi/euler/pr15/Pr15-list.cs
 /Users/philipcastiglione/dev/stuff/multi/euler/pr15/Pr15.cs
