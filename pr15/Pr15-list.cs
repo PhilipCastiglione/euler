@@ -6,30 +6,30 @@ namespace ConsoleApplicationList
 {
     public class Program
     {
-        public static List<long> BuildArray(int size)
+        static List<long> BuildLatticeRow(int size)
         {
-            var built_array = new List<long>();
-            built_array.Add(1);
+            var latticeRow = new List<long>();
+            latticeRow.Add(1);
 
-            if(size != 1)
+            if (size != 1)
             {
-                var smaller_builder = BuildArray(size - 1);
+                var prevLatticeRow = BuildLatticeRow(size - 1);
 
-                for(int i = 1; i < smaller_builder.Count; i++)
+                for (int i = 1; i < prevLatticeRow.Count; i++)
                 {
-                    built_array.Add(built_array.Last() + smaller_builder[i]);
+                    latticeRow.Add(latticeRow.Last() + prevLatticeRow[i]);
                 }
             }
 
-            built_array.Add(built_array.Last() * 2);
+            latticeRow.Add(latticeRow.Last() * 2);
 
-            return built_array;
+            return latticeRow;
         }
         public static void ListMain(string[] args)
         {
-            var euler_array = BuildArray(Int32.Parse(args[0]));
+            var latticeRow = BuildLatticeRow(int.Parse(args[0]));
 
-            Console.WriteLine(euler_array[euler_array.Count - 1]);
+            Console.WriteLine(latticeRow[latticeRow.Count - 1]);
         }
     }
 }
